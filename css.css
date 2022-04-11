@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+:root {
+    --LightCian: hsl(193, 38%, 86%);
+    --NeonGreen: hsl(150, 100%, 66%);
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --DarkBlue: hsl(218, 23%, 16%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--DarkBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Manrope", sans-serif;
+}
+
+.card {
+    position: relative;
+    width: 90%;
+    border: 0;
+    border-radius: 10px;
+    background-color: var(--DarkGrayishBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+}
+
+.card__title {
+    letter-spacing: 4px;
+    font-size: 1em;
+    color: var(--NeonGreen);
+}
+
+.card__content {
+    margin-top: 0;
+    color: var(--LightCian);
+    padding: 0 50px;
+    font-size: 20px;
+}
+
+.card__divider {
+    width: 100%;
+    height: 20px;
+    background-image: url("./images/pattern-divider-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 40px;
+}
+
+.card__button {
+    position: absolute;
+    background-color: var(--NeonGreen);
+    width: 60px;
+    height: 60px;
+    border: 0;
+    border-radius: 50%;
+    bottom: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__button:hover {
+    box-shadow: 0 0 15px 11px rgba(66, 238, 66, 0.275);
+}
+
+@media (min-width: 375px) {
+    .card {
+        max-width: 40%;
+    }
+    .card__divider {
+        background-image: url("./images/pattern-divider-desktop.svg");
+    }
+}
