@@ -72,15 +72,14 @@ body {
     align-items: center;
 }
 
-.card__button:hover {
-    box-shadow: 0 0 15px 11px rgba(66, 238, 66, 0.275);
-}
-
 @media (min-width: 375px) {
     .card {
         max-width: 40%;
     }
     .card__divider {
         background-image: url("./images/pattern-divider-desktop.svg");
+    }
+    .card__button:hover {
+        box-shadow: 0 0 15px 11px rgba(66, 238, 66, 0.275);
     }
 }
